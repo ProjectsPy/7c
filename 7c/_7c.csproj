@@ -39,11 +39,19 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net40\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net40\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System" />
     <Reference Include="System.Data" />
-    <Reference Include="System.Data.Entity" />
     <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -60,9 +68,6 @@
     <Reference Include="System.Transactions" />
     <Reference Include="System.Web.Services" />
     <Reference Include="System.EnterpriseServices" />
-    <Reference Include="EntityFramework">
-      <HintPath>..\packages\EntityFramework.5.0.0\lib\net40\EntityFramework.dll</HintPath>
-    </Reference>
     <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <Private>True</Private>
       <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
@@ -195,18 +200,55 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="css\AjaxLoader.gif" />
+    <Content Include="css\blank.gif" />
     <Content Include="css\bootstrap-theme.css" />
     <Content Include="css\bootstrap-theme.min.css" />
     <Content Include="css\bootstrap.css" />
     <Content Include="css\bootstrap.min.css" />
     <Content Include="css\globalstyleorange.css" />
     <Content Include="css\globalstyle.css" />
+    <Content Include="css\grabbing.png" />
+    <Content Include="css\layerslider.css" />
+    <Content Include="css\owlcarousel.css" />
+    <Content Include="css\owltheme.css" />
+    <Content Include="css\owltransitions.css" />
+    <Content Include="css\style.css" />
     <Content Include="favicon.ico" />
+    <Content Include="fontawesome\css\fontawesome.css" />
+    <Content Include="fontawesome\css\font-awesome.min.css" />
+    <Content Include="fontawesome\fonts\fontawesome-webfont.svg" />
     <Content Include="Global.asax" />
+    <Content Include="Images\511.jpg" />
+    <Content Include="Images\datix1.jpg" />
+    <Content Include="Images\Encabezado7C_.jpg" />
+    <Content Include="Images\espetrotec.jpg" />
+    <Content Include="Images\full-bg-11.jpg" />
+    <Content Include="Images\full-bg-16.jpg" />
+    <Content Include="Images\full-bg-20.jpg" />
+    <Content Include="Images\full-bg-21.jpg" />
+    <Content Include="Images\fullimage1.jpg" />
+    <Content Include="Images\fullimage2.jpg" />
+    <Content Include="Images\fullimage3.jpg" />
+    <Content Include="Images\idteck.jpg" />
+    <Content Include="Images\logo.gif" />
+    <Content Include="Images\Mobileye.jpg" />
+    <Content Include="Images\Provision.jpg" />
+    <Content Include="Images\slash-it.png" />
+    <Content Include="Images\Visonic.jpg" />
+    <Content Include="js\app.js" />
+    <Content Include="js\greensock.js" />
+    <Content Include="js\jquerystellar.js" />
     <Content Include="js\jquery1.js" />
     <Content Include="js\bootstrap.min.js" />
+    <Content Include="js\layersliderkreaturamedia.js" />
+    <Content Include="js\layerslidertransitions.js" />
+    <Content Include="js\owlcarousel.js" />
+    <Content Include="js\owlcarousel.min.js" />
     <Content Include="Scripts\jquery-1.11.2.js" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>
@@ -240,6 +282,38 @@
   <ItemGroup>
     <Content Include="css\bootstrap-theme.css.map" />
     <Content Include="css\bootstrap.css.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="fontawesome\fonts\fontawesome-webfont.eot" />
+    <Content Include="fontawesome\fonts\fontawesome-webfont.ttf" />
+    <Content Include="fontawesome\fonts\fontawesome-webfont.woff" />
+    <Content Include="fontawesome\fonts\FontAwesome.otf" />
+    <Content Include="fontawesome\less\bordered-pulled.less" />
+    <Content Include="fontawesome\less\core.less" />
+    <Content Include="fontawesome\less\fixed-width.less" />
+    <Content Include="fontawesome\less\font-awesome.less" />
+    <Content Include="fontawesome\less\icons.less" />
+    <Content Include="fontawesome\less\larger.less" />
+    <Content Include="fontawesome\less\list.less" />
+    <Content Include="fontawesome\less\mixins.less" />
+    <Content Include="fontawesome\less\path.less" />
+    <Content Include="fontawesome\less\rotated-flipped.less" />
+    <Content Include="fontawesome\less\spinning.less" />
+    <Content Include="fontawesome\less\stacked.less" />
+    <Content Include="fontawesome\less\variables.less" />
+    <Content Include="fontawesome\scss\font-awesome.scss" />
+    <Content Include="fontawesome\scss\_bordered-pulled.scss" />
+    <Content Include="fontawesome\scss\_core.scss" />
+    <Content Include="fontawesome\scss\_fixed-width.scss" />
+    <Content Include="fontawesome\scss\_icons.scss" />
+    <Content Include="fontawesome\scss\_larger.scss" />
+    <Content Include="fontawesome\scss\_list.scss" />
+    <Content Include="fontawesome\scss\_mixins.scss" />
+    <Content Include="fontawesome\scss\_path.scss" />
+    <Content Include="fontawesome\scss\_rotated-flipped.scss" />
+    <Content Include="fontawesome\scss\_spinning.scss" />
+    <Content Include="fontawesome\scss\_stacked.scss" />
+    <Content Include="fontawesome\scss\_variables.scss" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

@@ -24,7 +24,7 @@ namespace _7c.Controllers
 
         public ActionResult Contact()
         {
-            ViewBag.Message = "Your contact page.";
+            ViewBag.Message = "Envianos un Mensaje.";
 
             return View();
         }

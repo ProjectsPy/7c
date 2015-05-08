@@ -18,11 +18,27 @@ namespace _7c
             //            "~/Scripts/modernizr-*"));
 
             bundles.Add(new StyleBundle("~/css").Include(
-                "~/css/bootstrap.css",
-                "~/css/globalstyleorange.css"
+                "~/css/bootstrap.css",                
+                "~/css/owlcarousel.css",
+                "~/css/owltheme.css",
+                "~/css/globalstyleorange.css",
+                "~/css/style.css",
+                "~/css/layerslider.css"
                 ));
+
+            bundles.Add(new StyleBundle("~/font").Include(
+                "~/fontawesome/css/fontawesome.css"
+                ));
+
             bundles.Add(new ScriptBundle("~/bundles/ui").Include(
-                      "~/js/jquery1.js"));
+                      "~/js/jquery1.js",
+                      "~/js/app.js",
+                      "~/js/owlcarousel.js",
+                      "~/js/jquerystellar.js",
+                      "~/js/greensock.js",
+                      "~/js/layerslidertransitions.js",
+                      "~/js/layersliderkreaturamedia.js"));
+                     
            
         }
     }

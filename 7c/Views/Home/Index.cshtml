@@ -2,44 +2,217 @@
     ViewBag.Title = "Home Page";
 }
 @section featured {
-    <section class="featured">
-        <div class="content-wrapper">
-            <hgroup class="title">
-                <h1>@ViewBag.Title.</h1>
-                <h2>@ViewBag.Message</h2>
-            </hgroup>
-            <p>
-                To learn more about ASP.NET MVC visit
-                <a href="http://asp.net/mvc" title="ASP.NET MVC Website">http://asp.net/mvc</a>.
-                The page features <mark>videos, tutorials, and samples</mark> to help you get the most from ASP.NET MVC.
-                If you have any questions about ASP.NET MVC visit
-                <a href="http://forums.asp.net/1146.aspx/1?MVC" title="ASP.NET MVC Forum">our forums</a>.
-            </p>
+    
+    @*<div id="owl-demo" class="owl-carousel owl-theme">
+
+    <div class="item"><img src="Images/full-bg-11.jpg" alt="The Last of us"></div>
+    <div class="item"><img src="Images/full-bg-20.jpg" alt="GTA V"></div>
+    <div class="item">
+        <img src="Images/full-bg-21.jpg" class="ls-bg" style="width: 100%;" alt="Slide background">
+        <a href="" class="btn btn-base btn-lg ls-l" style="top:60%; left:80px;" data-ls="offsetxin:0;offsetyin:250;durationin:1500;delayin:1500;offsetxout:0;offsetyout:-8;easingout:easeInOutQuart;scalexout:1.2;scaleyout:1.2;" target="_blank">
+            Learn more
+        </a>    
+    </div>
+        
+</div>*@
+   <section id="slider-wrapper" class="layer-slider-wrapper layer-slider-dynamic">
+    <div id="layerslider" style="width:100%;height:520px;">
+        <!-- Slide 1 -->
+        <div class="ls-slide" data-ls="transition2d:1;timeshift:-1000;">
+            <!-- slide background -->
+            <img src="Images/full-bg-11.jpg" class="ls-bg" alt="Slide background" />
+
+            <!-- Left Text -->
+            <h3 class="ls-l title-lg c-white text-shadow text-uppercase text-center strong" style="width:100%; top:25%; left:50%;" data-ls="offsetxin:0;offsetyin:250;durationin:1000;delayin:500;offsetxout:0;offsetyout:-8;easingout:easeInOutQuart;scalexout:1.2;scaleyout:1.2;">
+                Welcome to Boomerang
+            </h3>
+            <h3 class="ls-l title c-white text-wrapped black text-uppercase text-center strong" style="top:50%; left:50%;" data-ls="offsetxin:0;offsetyin:250;durationin:1000;delayin:1000;offsetxout:0;offsetyout:-8;easingout:easeInOutQuart;scalexout:1.2;scaleyout:1.2;">
+                Vision.Believe.Success
+            </h3>
+
+            <h3 class="ls-l title-xs c-white text-shadow text-uppercase text-center strong" style="width:100%; top:72%; left:50%;" data-ls="offsetxin:0;offsetyin:250;durationin:1000;delayin:1500;offsetxout:0;offsetyout:-8;easingout:easeInOutQuart;scalexout:1.2;scaleyout:1.2;">
+                Start the tour
+            </h3>
         </div>
-    </section>
+
+        <!-- Slide 2 -->
+        <div class="ls-slide" data-ls="transition2d:1;timeshift:-1000;">
+            <!-- slide background -->
+            <img src="Images/full-bg-20.jpg" class="ls-bg" style="width: 100%;" alt="Slide background" />
+
+            <!-- Left Text -->
+            <h3 class="ls-l title text-normal" style="width:600px; top:35%; left:80px;" data-ls="offsetxin:0;offsetyin:250;durationin:1000;delayin:500;offsetxout:0;offsetyout:-8;easingout:easeInOutQuart;scalexout:1.2;scaleyout:1.2;">
+                The secret of getting ahead is <span class="strong-600">getting</span> <span class="strong-600 c-base">started</span></strong>
+            </h3>
+
+            <p class="ls-l text-standard" style="width:500px; top:50%; left:80px;" data-ls="offsetxin:0;offsetyin:250;durationin:1000;delayin:1000;offsetxout:0;offsetyout:-8;easingout:easeInOutQuart;scalexout:1.2;scaleyout:1.2;">
+                Boomerang is ready to be part of your project. Let's get started
+            </p>
+
+            <a href="" class="btn btn-base btn-lg ls-l" style="top:60%; left:80px;" data-ls="offsetxin:0;offsetyin:250;durationin:1500;delayin:1500;offsetxout:0;offsetyout:-8;easingout:easeInOutQuart;scalexout:1.2;scaleyout:1.2;" target="_blank">
+                Learn more
+            </a>
+        </div>
+
+    </div>
+</section>
 }
-<h3>We suggest the following:</h3>
-<ol class="round">
-    <li class="one">
-        <h5>Getting Started</h5>
-        ASP.NET MVC gives you a powerful, patterns-based way to build dynamic websites that
-        enables a clean separation of concerns and that gives you full control over markup
-        for enjoyable, agile development. ASP.NET MVC includes many features that enable
-        fast, TDD-friendly development for creating sophisticated applications that use
-        the latest web standards.
-        <a href="http://go.microsoft.com/fwlink/?LinkId=245151">Learn more…</a>
-    </li>
 
-    <li class="two">
-        <h5>Add NuGet packages and jump-start your coding</h5>
-        NuGet makes it easy to install and update free libraries and tools.
-        <a href="http://go.microsoft.com/fwlink/?LinkId=245153">Learn more…</a>
-    </li>
 
-    <li class="three">
-        <h5>Find Web Hosting</h5>
-        You can easily find a web hosting company that offers the right mix of features
-        and price for your applications.
-        <a href="http://go.microsoft.com/fwlink/?LinkId=245157">Learn more…</a>
-    </li>
-</ol>
+
+<section class="slice base" id="empresa">
+    <div class="wp-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-sm-6 ">
+                    <div class="icon-block icon-block-1">
+                        <div class="icon-block-item">
+                            <i class="fa fa-list-alt"></i>
+                        </div>
+                        <div class="icon-block-body">
+                            <h4 class="c-white">Endless possibilities</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 ">
+                    <div class="icon-block icon-block-1">
+                        <div class="icon-block-item">
+                            <i class="fa fa-file"></i>
+                        </div>
+                        <div class="icon-block-body">
+                            <h4 class="c-white">Over 60 page layouts</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 ">
+                    <div class="icon-block icon-block-1">
+                        <div class="icon-block-item">
+                            <i class="fa fa-coffee"></i>
+                        </div>
+                        <div class="icon-block-body">
+                            <h4 class="c-white">Great design. flexible code</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+@*<section class="prlx-bg inset-shadow-1" data-stellar-ratio="2" style="min-height: 500px; height: auto; padding: 30px 0; background-image: url(../Images/full-bg-11.jpg)">
+    <!-- Section mask -->
+    <div class="mask mask-1"></div>
+    <div class="container">
+        <div class="section-title-wr">
+            <h3 class="section-title center">
+                <span class="c-white">Contact our agency</span>
+                <small class="c-white">Lorem ipsum dolor sit amet</small>
+            </h3>
+        </div>
+
+        <!-- Contact form -->
+        <form class="form-dark">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="form-group form-group-lg">
+                        <label class="sr-only">First name</label>
+                        <input type="text" class="form-control input-lg" placeholder="First name" hidefocus="true">
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="form-group form-group-lg">
+                        <label class="sr-only">Last name</label>
+                        <input type="text" class="form-control input-lg" placeholder="Last name" hidefocus="true">
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="form-group form-group-lg">
+                        <label class="sr-only">E-mail</label>
+                        <input type="email" class="form-control input-lg" placeholder="E-mail" hidefocus="true">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="form-group">
+                        <label class="sr-only">Message</label>
+                        <textarea class="form-control" placeholder="Message ..." rows="5"></textarea>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <a href="#" class="btn btn-lg btn-dark" title="">
+                        <span>Send message</span>
+                    </a>
+                </div>
+            </div>
+        </form>
+
+        <!-- Social Media Icons -->
+        <div class="social-media social-media-lg text-center mt-40">
+            <a href="#"><i class="fa fa-facebook facebook"></i></a>
+            <a href="#"><i class="fa fa-google-plus google"></i></a>
+            <a href="#"><i class="fa fa-twitter twitter"></i></a>
+        </div>
+    </div>
+</section>*@
+
+
+<section class="slice bg-white">
+    <div class="wp-section">
+        <div class="container">
+            <div class="section-title-wr">
+                <h3 class="section-title left"><span>Nuestros Partners</span></h3>
+            </div>
+            <div class="row">
+                <div class="col-md-2 col-sm-4 col-xs-6">
+                    <div class="client">
+                        <a href="#">
+                            <img src="Images/datix1.jpg" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-2 col-sm-4 col-xs-6">
+                    <div class="client">
+                        <a href="#">
+                            <img src="Images/Provision.jpg" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-2 col-sm-4 col-xs-6">
+                    <div class="client">
+                        <a href="#">
+                            <img src="images/espetrotec.jpg" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-2 col-sm-4 col-xs-6">
+                    <div class="client">
+                        <a href="#">
+                            <img src="images/idteck.jpg" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-2 col-sm-4 col-xs-6">
+                    <div class="client">
+                        <a href="#">
+                            <img src="images/Mobileye.jpg" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-2 col-sm-4 col-xs-6">
+                    <div class="client">
+                        <a href="#">
+                            <img src="images/Visonic.jpg" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
